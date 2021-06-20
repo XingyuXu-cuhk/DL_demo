@@ -69,9 +69,14 @@ Then we unpack them to the folder "programs"
     tar xvf cuda-10.0.tar.gz -C programs
 
 Also, set the PATH in .bashrc, for example:
-    
-    PATH=/bin:HOME/bin:HOME/programs/miniconda3/bin:$PATH \
 
+    vim ~/.bashrc
+    i #input mode
+    PATH=/bin:HOME/bin:HOME/programs/miniconda3/bin:$PATH \
+    
+Esc
+
+    :wq
 
 Clone codes from GitHub:
 
