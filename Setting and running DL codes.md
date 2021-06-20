@@ -60,9 +60,8 @@ Ubuntu 18 or 20 already may have CUDA 10.0 or 10.2 installed.
 They should be downloaded via NVIDIA website, but for this tutorial, you can download them
 from my Dropbox. 
     
-    wget https://www.dropbox.com/s/c1zzpriid1zng2d/cuda-10.0.tar.gz?dl=0 --output-document=cuda-10.0.tar.gz
-    wget https://www.dropbox.com/s/8yj8fu7a08f7dx8/cuDNN_7.4_cuda10.tar.gz?dl=0 --output-document=cuDNN_7.4_cuda10.tar.gz
-
+    wget https://www.dropbox.com/s/7hovzayglxzjwhj/cuda-10.0.tar.gz?dl=0 --output-document=cuda-10.0.tar.gz
+    wget https://www.dropbox.com/s/3tuetbaf29umonp/cuDNN_7.4_cuda10.tar.gz?dl=0  --output-document=cuDNN_7.4_cuda10.tar.gz
 Then we unpack them to the folder "programs"
  
     mkdir -p programs
