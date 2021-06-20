@@ -72,13 +72,12 @@ Also, set the PATH in .bashrc, for example:
 
     vim ~/.bashrc
     i #input mode
-    PATH=/bin:HOME/bin:HOME/programs/miniconda3/bin:$PATH \
+    PATH=/bin:HOME/bin:HOME/programs/miniconda3/bin:$PATH
     
-Esc
-
+Press Esc
     :wq
 
-Clone codes from GitHub:
+#### Step 3: Clone codes from GitHub:
 
     git clone https://github.com/yghlc/Landuse_DL ./codes_demo/PycharmProjects/Landuse_DL
     git clone https://github.com/yghlc/DeeplabforRS ./codes_demo/PycharmProjects/DeeplabforRS
@@ -87,6 +86,9 @@ Clone codes from GitHub:
     # then set the tensorflow research in the network parameter (e.g.,, deeplabv3plus_xception65.ini):
     tf_research_dir = ~/codes/PycharmProjects/tensorflow/yghlc_tf_model/research
     
+
+#### Step 4: Download pre-trained model
+
 DeepLabv3+ provides some [pre-trained model](https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md), 
 in this tutorial, we use one of them and download it to *Data*
 
@@ -97,8 +99,9 @@ in this tutorial, we use one of them and download it to *Data*
 
 Make a working folder under *project/LinLiu/*
 
-    mkdir /project/LinLiu/Agnes_DL
-    cd /project/LinLiu/Agnes_DL
+    cd /project/LiuLiu/
+    mkdir ID
+    cd /ID
     mkdir test_deeplabV3+_1_GL
     cd test_deeplabV3+_1_GL
     
