@@ -87,7 +87,11 @@ Clone codes from GitHub:
     # then set the tensorflow research in the network parameter (e.g.,, deeplabv3plus_xception65.ini):
     tf_research_dir = ~/codes/PycharmProjects/tensorflow/yghlc_tf_model/research
     
+DeepLabv3+ provides some [pre-trained model](https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md), 
+in this tutorial, we use one of them and download it to *Data*
 
+    mkdir -p ./Data/deeplab/v3+/pre-trained_model
+    wget https://www.dropbox.com/s/0h7g5cjyvxywkt1/deeplabv3_xception_2018_01_04.tar.gz?dl=0 --output-document=./Data/deeplab/v3+/pre-trained_model/deeplabv3_xception_2018_01_04.tar.gz
 
 ## Run training, prediction, and post-processing
 
