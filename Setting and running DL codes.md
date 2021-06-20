@@ -1,4 +1,4 @@
-# Setting and running this repo
+# Setting and running DL codes on ITSC
 
 
 This file introduces how to set the environment for running this repo.
@@ -128,19 +128,27 @@ Please edit the job name ( #SBATCH -J ) and notified mail address ( #SBATCH --ma
 The above files can be copies from */project/LinLiu/demo_carol/test_deeplabV3+_1_example* 
 
     cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/exe.sh ./
-    cp ../../carol/test_deeplabV3+_1_S2_rgb2/main_para.ini ./
-    cp ../../carol/test_deeplabV3+_1_S2_rgb2/poiqu_rgb_2018.ini ./
-    cp ../../carol/test_deeplabV3+_1_S2_rgb2/poiqu_rgb_2019.ini ./
-    cp ../../carol/test_deeplabV3+_1_S2_rgb2/bhutan_rgb.ini ./
-    cp ../../carol/test_deeplabV3+_1_S2_rgb2/deeplabv3plus_xception65.ini ./
-    cp ../../carol/test_deeplabV3+_1_S2_rgb2/singularity.sh ./
-    cp ../../carol/test_deeplabV3+_1_S2_rgb2/run_INsingularity_miniconda.sh ./
+    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/main_para.ini ./
+    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/poiqu_rgb_2018.ini ./
+    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/poiqu_rgb_2019.ini ./
+    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/bhutan_rgb.ini ./
+    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/deeplabv3plus_xception65.ini ./
+    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/singularity.sh ./
+    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/run_INsingularity_miniconda.sh ./
 
 
 
-To start a job, run 
+To submit a job,
 
     sbatch singularity
+
+To view the job status,
+
+    squeue
+    
+To view the job process,
+
+    vim slurm-"jobID".txt
 
 
 
