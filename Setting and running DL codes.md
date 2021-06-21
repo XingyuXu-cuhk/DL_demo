@@ -101,7 +101,7 @@ Make a working folder under *project/LinLiu/*
 
     cd /project/LinLiu/
     mkdir yourownfolder
-    cd /yourownfolder
+    cd yourownfolder
     mkdir test_deeplabV3+_1_GL
     cd test_deeplabV3+_1_GL
     
