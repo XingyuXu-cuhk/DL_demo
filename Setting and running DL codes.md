@@ -151,7 +151,7 @@ The above files can be copies from */project/LinLiu/demo_carol/test_deeplabV3+_1
 
 To submit a job,
 
-    sbatch singularity
+    sbatch singularity.sh
 
 To view the job status,
 
