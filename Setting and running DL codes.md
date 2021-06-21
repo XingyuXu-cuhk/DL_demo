@@ -138,14 +138,14 @@ Please edit the job name ( #SBATCH -J ) and notified mail address ( #SBATCH --ma
 
 The above files can be copies from */project/LinLiu/demo_carol/test_deeplabV3+_1_example* 
 
-    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/exe.sh ./
-    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/main_para.ini ./
-    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/poiqu_rgb_2018.ini ./
-    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/poiqu_rgb_2019.ini ./
-    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/bhutan_rgb.ini ./
-    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/deeplabv3plus_xception65.ini ./
-    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/singularity.sh ./
-    cp /project/LinLiu/carol/test_deeplabV3+_1_S2_rgb2/run_INsingularity_miniconda.sh ./
+    cp /project/LinLiu/demo_carol/test_deeplabV3+_1_example/exe.sh ./
+    cp /project/LinLiu/demo_carol/test_deeplabV3+_1_example/main_para.ini ./
+    cp /project/LinLiu/demo_carol/test_deeplabV3+_1_example/poiqu_rgb_2018.ini ./
+    cp /project/LinLiu/demo_carol/test_deeplabV3+_1_example/poiqu_rgb_2019.ini ./
+    cp /project/LinLiu/demo_carol/test_deeplabV3+_1_example/bhutan_rgb.ini ./
+    cp /project/LinLiu/demo_carol/test_deeplabV3+_1_example/deeplabv3plus_xception65.ini ./
+    cp /project/LinLiu/demo_carol/test_deeplabV3+_1_example/singularity.sh ./
+    cp /project/LinLiu/demo_carol/test_deeplabV3+_1_example/run_INsingularity_miniconda.sh ./
 
 
 
