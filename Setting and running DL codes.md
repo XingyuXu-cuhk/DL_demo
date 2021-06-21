@@ -100,8 +100,8 @@ in this tutorial, we use one of them and download it to *Data*
 Make a working folder under *project/LinLiu/*
 
     cd /project/LiuLiu/
-    mkdir ID
-    cd /ID
+    mkdir yourownfolder
+    cd /yourownfolder
     mkdir test_deeplabV3+_1_GL
     cd test_deeplabV3+_1_GL
     
