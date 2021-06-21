@@ -18,6 +18,12 @@ Install python using miniconda
     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     sh Miniconda3-latest-Linux-x86_64.sh -p $HOME/programs/miniconda3 -b
 
+Also, set the PATH in .bashrc, for example:
+
+    vim ~/.bashrc
+    i #input mode
+    PATH=/bin:"HOME/bin":"HOME/programs/miniconda3/bin":$PATH
+    
 Install tensorflow 1.14 (a relative old version) for running [DeepLabv3+](https://github.com/tensorflow/models/tree/master/research/deeplab)
     
     conda create -n tf1.14 python=3.7   # need python3.7 or 3.6 (python 3.8 cannot found 1.x version)
@@ -68,11 +74,7 @@ Then we unpack them to the folder "programs"
     tar xvf cuDNN_7.4_cuda10.tar.gz -C programs
     tar xvf cuda-10.0.tar.gz -C programs
 
-Also, set the PATH in .bashrc, for example:
 
-    vim ~/.bashrc
-    i #input mode
-    PATH=/bin:HOME/bin:HOME/programs/miniconda3/bin:$PATH
     
 Press Esc
     :wq
@@ -97,6 +99,11 @@ in this tutorial, we use one of them and download it to *Data*
 
 ## Run training, prediction, and post-processing
 
+To start an experiment, each time you login in th ITSC
+
+    source activate
+    conda activate tf1.14 # after this step, it will show "tf1.14" at the begin of the line,making sure it is under the environment of tf1.14
+    
 Make a working folder under *project/LinLiu/*
 
     cd /project/LinLiu/
@@ -162,6 +169,8 @@ To view the job process,
     vim slurm-"jobID".txt
 
 
+    
+    
 
 
 
