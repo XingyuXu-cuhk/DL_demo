@@ -22,7 +22,13 @@ Also, set the PATH in .bashrc, for example:
 
     vim ~/.bashrc
     i #input mode
-    PATH=/bin:"HOME/bin":"HOME/programs/miniconda3/bin":$PATH
+    PATH="${HOME}/programs/miniconda3/bin:$PATH"
+
+Press Esc
+   
+    :wq   
+    source ~/.bashrc    
+    
     
 Install tensorflow 1.14 (a relative old version) for running [DeepLabv3+](https://github.com/tensorflow/models/tree/master/research/deeplab)
     
@@ -76,8 +82,7 @@ Then we unpack them to the folder "programs"
 
 
     
-Press Esc
-    :wq
+
 
 #### Step 3: Clone codes from GitHub:
 
