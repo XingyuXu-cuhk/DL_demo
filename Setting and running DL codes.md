@@ -1,8 +1,16 @@
 # Setting and running DL codes on ITSC
+    
+## Setting on the ITSC GPU cluster
+Before the setting, it is good to know the [policies](https://www.cuhk.edu.hk/itsc/hpc/policies.html) and 
+[storage](https://www.cuhk.edu.hk/itsc/hpc/storage.html). It also requires users to 
+submit a job for running scripts (computing tasks) using [Slurm](https://www.cuhk.edu.hk/itsc/hpc/slurm.html). 
+[Singularity](https://www.cuhk.edu.hk/itsc/hpc/singularity.html) can create an isolated software environment. 
 
+Due to the small size of the home folder (20 GB), data should be stored in other places like /project/LinLiu
 
 This file introduces how to set the environment for running this repo.
 It also provides a reference for setting and running on your own workstations.
+
 
 #### Step 1: Login in ITSC
 
@@ -10,8 +18,17 @@ Connect ITSC and login in with you account Install
 
     ssh sID@chpc-login01.itsc.cuhk.edu.hk
     input password
+
+
+#### Step 2: copy a singularity image
+For easy use and convenience, I have built a singularity image and uploaded it to my Dropbox. 
+This file and other dependencies are also available at */project/LinLiu/Landuse_DL_packages*.
+After logining to the ITSC server, to download the image, run:
+
+    wget https://www.dropbox.com/s/adailczifozhfgt/ubuntu16.04_itsc_tf.simg?dl=0 --output-document=ubuntu16.04_itsc_tf.simg
     
-#### Step 2: install packages and dependencies
+    
+#### Step 3: install packages and dependencies
 
 Install python using miniconda 
 
@@ -84,7 +101,7 @@ Then we unpack them to the folder "programs"
     
 
 
-#### Step 3: Clone codes from GitHub:
+#### Step 4: Clone codes from GitHub:
 
     git clone https://github.com/yghlc/Landuse_DL ./codes_demo/PycharmProjects/Landuse_DL
     git clone https://github.com/yghlc/DeeplabforRS ./codes_demo/PycharmProjects/DeeplabforRS
@@ -94,7 +111,7 @@ Then we unpack them to the folder "programs"
     tf_research_dir = ~/codes/PycharmProjects/tensorflow/yghlc_tf_model/research
     
 
-#### Step 4: Download pre-trained model
+#### Step 5: Download pre-trained model
 
 DeepLabv3+ provides some [pre-trained model](https://github.com/tensorflow/models/blob/master/research/deeplab/g3doc/model_zoo.md), 
 in this tutorial, we use one of them and download it to *Data*
