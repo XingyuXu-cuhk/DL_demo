@@ -188,7 +188,7 @@ To view the job status,
     
 To view the job process,
 
-    vim slurm-"jobID".txt
+    vim slurm-"jobID".out
 
 
     
